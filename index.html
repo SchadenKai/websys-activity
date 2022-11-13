@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        header,aside,section,footer{
+            padding: 10px;
+        }
+        header,
+        footer{
+            background-color: #fba101;
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+        }
+        aside {
+            background-color: #6d648b;
+            width: 15%;
+        }
+        section {
+            background-color: #6cbaa7;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        aside,
+        section {
+            height: 100%;
+        }
+        a {
+            color: white;
+            font-size: large;
+        }
+        .container {
+            width: 100%;
+            height: auto;
+            grid-template-columns: 1fr 1fr;
+        }
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header style="height: 20%;">
+        <img src="img/header-img.png" alt="header-logo" style="width:fit-content">
+    </header>
+    <div style="width:100vw; height:70%; display:flex;">
+        <aside>
+            <div class="container" style="display:grid; grid-template-columns: 1fr 60px; margin-bottom:15px">
+                <input type="search" name="search" id="search" placeholder="search">
+                <input type="button" value="search">
+            </div>
+            <a href="#">Contributors</a>
+        </aside>
+        <section>
+            <h1 style="margin-top: 30px; color: white; font-family:cursive">Posts</h1>
+            <img src="img/img-cat.jpg" alt="image of a cat" style="width:20%; border-radius: 10px; margin: 20px 0" >
+            <h1 style="margin-top: 30px; color: #585b5c; font-family:cursive">Posts</h1>
+            <p>by <a href="#">Pek</a>, on April 27, 2019</p>
+            <p style="margin: 15px 0 ;">Lorem</p>
+            <a href="#">Read more...</a>
+        </section>
+        <aside>
+            <img src="img/user-placeholder.jpg" alt="user icon" style="width: 30%; border-radius: 100px; display:inline">
+            <p style="display: inline;">Pek pek is a lazy programmer</p>
+            <ol style="text-align:center; color: white; margin-top: 15px">
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ol>
+        </aside>
+    </div>
+    <footer style="height: 10%">
+        <p>Copyright 2019</p>
+    </footer>
+</body>
+</html>
