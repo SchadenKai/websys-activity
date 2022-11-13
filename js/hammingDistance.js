@@ -1,3 +1,5 @@
+// this is not included in the web page
+
 const dna1 = "CAACCCC";
 const dna2 = "CCAACAC";
 

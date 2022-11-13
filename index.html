@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    <script type="text/javascript" src="js/app.js"></script>
     <style>
         * {
             margin: 0;
@@ -52,7 +53,11 @@
         p {
             color: white;
         }
+        .black-text {
+            color: black;
+        }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header style="height: 20%;">
@@ -68,13 +73,13 @@
         </aside>
         <section>
             <h1 style="margin-top: 30px; color: white; font-family:cursive">Posts</h1>
-            <img src="img/img-cat.jpg" alt="image of a cat" style="width:20%; border-radius: 10px; margin: 20px 0" >
+            <img src="img/img-cat.jpg"  id="cat_img">
             <h1 style="margin-top: 30px; color: #585b5c; font-family:cursive">Posts</h1>
-            <p>by <a href="#">Pek</a>, on April 27, 2019</p>
-            <p style="margin: 15px 0 ;">Lorem</p>
-            <a href="#">Read more...</a>
+            <p class="black-text">by <a href="#">Pek</a>, on April 27, 2019</p>
+            <p style="margin: 15px 0 ;" class="black-text">Lorem</p>
+            <a href="#" onclick="readMore()" class="black-text">Read more...</a>
         </section>
-        <aside>
+        <aside id="removable-aside">
             <img src="img/user-placeholder.jpg" alt="user icon" style="width: 30%; border-radius: 100px; display:inline">
             <p style="display: inline;">Pek pek is a lazy programmer</p>
             <ol style="text-align:center; color: white; margin-top: 15px">
@@ -88,4 +93,5 @@
         <p>Copyright 2019</p>
     </footer>
 </body>
+<script src="js/app.js"></script>
 </html>
